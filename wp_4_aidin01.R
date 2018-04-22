@@ -10,8 +10,8 @@ library(raster)
 library(R.utils)
 
 # Unzip raster files
-gunzip(paste0(getwd(),"esa_lc_1992_agg10.tif.gz",overwrite=T)
-gunzip(paste0(getwd(),"esa_lc_2015_agg10.tif.gz",overwrite=T)
+gunzip(paste0(getwd(),"esa_lc_1992_agg10.tif.gz",overwrite=T))
+gunzip(paste0(getwd(),"esa_lc_2015_agg10.tif.gz",overwrite=T))
 
 # Load raster files
 esa1992<-raster(paste0(getwd(),"esa_lc_1992_agg10.tif.gz")
