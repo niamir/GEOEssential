@@ -14,8 +14,8 @@ gunzip(paste0(getwd(),"esa_lc_1992_agg10.tif.gz",overwrite=T))
 gunzip(paste0(getwd(),"esa_lc_2015_agg10.tif.gz",overwrite=T))
 
 # Load raster files
-esa1992<-raster(paste0(getwd(),"esa_lc_1992_agg10.tif.gz")
-esa2015<-raster(paste0(getwd(),"esa_lc_2015_agg10.tif.gz")
+esa1992<-raster(paste0(getwd(),"esa_lc_1992_agg10.tif.gz"))
+esa2015<-raster(paste0(getwd(),"esa_lc_2015_agg10.tif.gz"))
 esa<-stack(esa1992,esa2015)
 
 # Reclass to Anthropogenic Classes (i.e. Cultivated and Urban Areas)
